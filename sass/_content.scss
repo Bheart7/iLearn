@@ -1,0 +1,266 @@
+// Content
+
+.content {
+  height: 100vh;
+  position: relative;
+
+  &__splide {
+    box-shadow: none;
+    color: #222;
+  }
+
+  &__link {
+    display: block;
+    color: #000;
+    padding: 0.6rem 0.8rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: inline-block;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    transition: all 0.2s;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.2);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.content__header {
+  background-size: cover;
+  height: 25vh;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.content__header--1 {
+  background-position: bottom;
+  background-image: url('../assets/1876.jpg');
+}
+
+.content__header--2 {
+  color: #222;
+  background-position: center right;
+  background-image: url('./assets/2766672.jpg');
+}
+
+.content__header--3 {
+  background-position: top;
+  background-image: url('./assets/pexels-magda-ehlers-1329296.jpg');
+}
+
+.content__title {
+  font-size: 2.5rem;
+}
+
+.content__avatar {
+  margin-left: 4rem;
+  position: relative;
+  z-index: 100;
+  width: 16.5rem;
+  height: 16.5rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  display: grid;
+  place-items: center;
+  box-shadow: -1px 9px 20px -12px rgba(0, 0, 0, 0.75);
+}
+
+.content__imageContainer {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content__image {
+  object-fit: contain;
+  width: 100%;
+  max-height: 25rem;
+}
+
+//Sidebar
+
+.sidebar {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 25%;
+  height: 75vh;
+  box-shadow: -1px 9px 30px -12px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar__list {
+  font-size: 2rem;
+  margin: 0 auto;
+  padding-top: 13rem;
+  list-style: none;
+  width: max-content;
+}
+
+.sidebar__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.sidebar__link:link,
+.sidebar__link:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar__link:hover {
+  text-decoration: underline;
+}
+
+.sidebar__link:active {
+  text-decoration: underline;
+}
+
+/*
+  Main
+*/
+
+.main {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainCard {
+  display: block;
+  font-size: 1rem;
+  padding: 1.5rem 4rem;
+  text-align: center;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 30px -15px rgba(0, 0, 0, 0.7);
+}
+
+.main__description {
+  font-size: 1.4rem;
+  padding: 1.5rem 0 1rem;
+}
+
+#progressBar {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: absolute;
+  // top: -12%;
+  bottom: 0;
+  margin: 15px 0px;
+  height: 25px;
+  width: 97%;
+  text-align: center;
+}
+
+.progressBar__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+  padding-top: 0.2rem;
+  font-size: 1rem;
+  opacity: 1;
+  transition: 1s ease 0.3s;
+}
+
+#progressPercent {
+  // display: none;
+
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: down 400ms ease-in;
+
+  &__avatar {
+    margin: 2rem auto 0;
+  }
+
+  &__title {
+    margin-top: -6rem;
+  }
+
+  &__text {
+    padding: 0.5rem 2rem 0;
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+.modalWrapper {
+  background-color: #fff;
+  position: relative;
+  width: 50%;
+  height: 67%;
+  z-index: 1000;
+  border-radius: 40px;
+  text-align: center;
+  // box-shadow: inset 2px 2px 30px -15px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

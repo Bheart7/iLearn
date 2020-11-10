@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <title>iLearn | Welcome to best learning platform on the internet</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="nav">
+      <a href="index.html" class="nav__brand nav__link">iLearn</a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="slider">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="assets/1876.jpg" alt="Image of Asteroid falling on earth" class="splide__image">
+              <h1 class="splide__title">Science</h1>
+              <p class="splide__description">Dive into the Realm of imagination</p>
+              <button class="splide__btn"><a href="science.html" class="splide__link">Discover</a></button>
+            </li>
+            <li class="splide__slide">
+              <img src="assets/2766672.jpg" alt="Image of calm mountains" class="splide__image">
+              <h1 class="splide__title">Social</h1>
+              <p class="splide__description">Social norms and values define a person</p>
+              <button class="splide__btn"><a href="social.html" class="splide__link">Discover</a></button>
+            </li>
+            <li class="splide__slide">
+              <img src="assets/michael-dziedzic-gEN5Btvf2Eg-unsplash.jpg" alt="Image of numbers from 1 to 10" class="splide__image">
+              <h1 class="splide__title">Maths</h1>
+              <p class="splide__description">The laws of nature are mathematical thoughts of God.</p>
+              <button class="splide__btn"><a href="maths.html" class="splide__link">Discover</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide', {
+        'type': 'loop',
+        'cover': true,
+        'height': '80vh',
+        'autoplay': true,
+        'interval': 2300,
+        'pauseOnHover': true,
+        'keyboard': true,
+      }).mount();
+    });
+  </script>
+</body>
+</html>

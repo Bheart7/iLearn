@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <title>iLearn | Welcome to best learning platform on the internet</title>
+</head>
+
+<body>
+
+  <div class='content'>
+    <header class='content__header content__header--1'>
+      <h1 class='content__title'>Science | Explore your imagination</h1>
+      <button class="content__btn"><a href="science.html" class="content__link">&laquo; Back</a></button>
+    </header>
+    <div class='content__avatar'>
+      <div class='content__imageContainer'>
+        <img class='content__image' src='assets/2481.webp' alt='Science instructor' />
+      </div>
+    </div>
+    <aside class='sidebar'>
+      <ul class='sidebar__list'>
+        <li class='sidebar__item'>
+          <a href="physics.html" class="sidebar__link">Physics</a>
+        </li>
+        <li class='sidebar__item'>
+          <a href="chemistry.html" class="sidebar__link">Chemistry</a>
+        </li>
+        <li class='sidebar__item'>
+          <a href="astronomy.html" class="sidebar__link">Astronomy</a>
+        </li>
+      </ul>
+    </aside>
+    <main class='main'>
+
+      <div id="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide mainCard">
+              <h1 class='main__title'>Diffusion and osmosis</h1>
+              <p class='main__description' align='justify'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, aliquid. Natus neque quidem
+                consectetur eum recusandae accusantium incidunt dignissimos veritatis, animi veniam dolorum eligendi eos
+                voluptatibus odio? Doloribus nobis culpa, illo perspiciatis expedita modi. Laboriosam, laborum quas
+                officia commodi dolorum asperiores vero delectus vel ullam praesentium reprehenderit repudiandae
+                corrupti rem omnis expedita! Accusantium amet dicta saepe libero, quam quaerat tenetur aliquam qui quia
+                et dolorem est, dolore perspiciatis, vero id alias ab rem. Molestiae quam provident hic itaque quaerat
+                at atque inventore sequi praesentium corporis quae aliquid alias officia, incidunt, veritatis pariatur
+                molestias voluptas ipsam doloremque fugiat tempore! Ab, dignissimos.
+              </p>
+            </li>
+            <li class="splide__slide mainCard">
+              <h1 class='main__title'>Cell Biology</h1>
+              <p class='main__description' align='justify'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse, eum delectus voluptates facere hic
+                incidunt, maiores excepturi, impedit cupiditate maxime! Nobis illo quasi dolores, qui magnam corrupti
+                numquam itaque tenetur minima recusandae accusantium harum. Laborum consectetur facere hic laudantium,
+                ea ab voluptatem accusantium vero ad nemo maxime sequi error, tempora dolore corrupti, impedit aut
+                quasi. Qui, optio, labore est adipisci aut in reprehenderit voluptas magnam eaque eius nobis minus
+                harum! Corporis esse quam officiis. Non repellendus doloribus eos blanditiis. Deserunt repudiandae iste
+                mollitia accusamus, sed exercitationem labore eaque voluptate provident laboriosam, molestiae voluptatem
+                temporibus. Harum placeat enim temporibus cumque!
+            </li>
+            <li class="splide__slide mainCard">
+              <h1 class='main__title'>Virology</h1>
+              <p class='main__description' align='justify'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum vitae nobis saepe, a molestias eius
+                molestiae quasi pariatur doloribus ad eaque porro repellat officia quo rerum consequuntur, consequatur
+                autem officiis fugiat ratione dolor magni rem? Maxime molestias minus cupiditate incidunt, officiis ex
+                nemo facere! Aspernatur praesentium assumenda necessitatibus veniam, porro cumque, nemo temporibus
+                excepturi nulla et eius ducimus alias culpa autem eos non repudiandae architecto nostrum omnis ad. Dolor
+                ut exercitationem tempore rem consequatur officia amet modi, velit sit atque repellat voluptates iusto
+                illum beatae eius dolorum ea, ullam minus quidem assumenda. Omnis, ullam sit quisquam modi explicabo
+                dolores expedita.
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#splide', {
+        type: 'loop',
+        direction: 'ttb',
+        height: '60vh',
+        width: '60vw',
+      }).mount();
+    });
+  </script>
+</body>
+
+</html>

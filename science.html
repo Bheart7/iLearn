@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <title>iLearn | Welcome to best learning platform on the internet</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="nav">
+      <a href="index.html" class="nav__brand nav__link">iLearn</a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="card-slider" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide card__slide">
+            <div class="splide__slide__container">
+              <img src="assets/chris-liverani-HUJDz6CJEaM-unsplash.jpg" class="card__image card__image--1">
+            </div>
+            <h4>Physics</h4>
+            <p>
+              Physics is the science of matter and its motion.
+            </p>
+            <button class="card__btn"><a href="physics.html" class="card__link">Learn more</a></button>
+          </li>
+          <li class="splide__slide card__slide">
+            <div class="splide__slide__container">
+              <img src="assets/bill-oxford-tR0PPLuN6Pw-unsplash.jpg" class="card__image card__image--2">
+            </div>
+            <h4>Chemistry</h4>
+            <p>
+              Chemistry is the science of elements and compounds.
+            </p>
+            <button class="card__btn"><a href="chemistry.html" class="card__link">Learn more</a></button>
+          </li>
+          <li class="splide__slide card__slide">
+            <div class="splide__slide__container">
+              <img src="assets/wexor-tmg-L-2p8fapOA8-unsplash.jpg" class="card__image card__image--3">
+            </div>
+            <h4>Biology</h4>
+            <p>
+              Biology is the  science of life and living organisms.
+            </p>
+            <button class="card__btn"><a href="biology.html" class="card__link">Learn more</a></button>
+          </li>
+          <li class="splide__slide card__slide">
+            <div class="splide__slide__container card--4">
+              <img src="assets/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg" class="card__image card__image--4">
+            </div>
+            <h4>Astronomy</h4>
+            <p>
+              Astronomy is a science of celestial objects.
+            </p>
+            <button class="card__btn"><a href="astronomy.html" class="card__link">Learn more</a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#card-slider', {
+          type: 'loop',
+          perPage: 2,
+          height: '60vh',
+          cover: true,
+          breakpoints: {
+            600: {
+              perPage: 1,
+            }
+          }
+        }).mount();
+      });
+  </script>
+</body>
+
+</html>
